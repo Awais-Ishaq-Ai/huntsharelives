@@ -1,23 +1,26 @@
-import { useState } from 'react'
-import './App.css'
-import Navbar from './ReuseableComponent/Navbar'
-import Home1 from './Component/Home1'
-import Home2 from './Component/Home2'
-import Search from './Search/Search'
-import Footer from './ReuseableComponent/Footer'
+import './App.css';
+import Navbar from './ReuseableComponent/Navbar';
+import Footer from './ReuseableComponent/Footer';
+import Home from './Component/Home';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import About from './About/About';
+import Services from './Services/Services';
+import Blog from './Blog/Blog';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
+    <Router>
       <Navbar />
-      <Home1 />
-      <Home2 />
-      <Search />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/blog" element={<Blog />} />
+      </Routes>
       <Footer />
-    </>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;

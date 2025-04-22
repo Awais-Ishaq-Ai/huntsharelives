@@ -10,8 +10,8 @@ export default function Search() {
             <div>
                 <img src={huntImg1} alt="Hunt Share Live" className="h-[400px]" />
             </div>
-            <div className='md:flex md:w-[50%] w-[100%] pb-2 justify-between '>
-                <div className=''>
+            <div className='md:flex md:w-[40%] w-[100%] pb-2 justify-between '>
+                <div className='w-[100%] mr-2'>
                 <TextField sx={{ marginRight: "15px", backgroundColor: "white" }} id="outlined-controlled" label="Enter your email" value={name} onChange={(event) => setName(event.target.value)} variant="outlined" fullWidth />
                 </div>
                 <div className='md:mt-0 mt-2 md:flex   flex justify-end'>

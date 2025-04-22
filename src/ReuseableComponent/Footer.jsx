@@ -33,8 +33,8 @@ export default function Footer() {
                 <div>
                     <h3 className="font-semibold text-lg">Contact Us</h3>
                     <ul className="mt-3 space-y-2 ">
-                        <li><a href="mailto:awaisjam59@gmail.com" className="hover:text-[#A65BFB] transition">awaisjam59@gmail.com</a></li>
-                        <li><a href="tel:03108727759" className="hover:text-[#A65BFB] transition">03108727759</a></li>
+                        <li><a href="mailto:awaisjam59@gmail.com" className="hover:text-[#A65BFB] transition">codingsfirst@gmail.com</a></li>
+                        <li><a href="tel:03108727759" className="hover:text-[#A65BFB] transition">92 301 6658497</a></li>
                     </ul>
                 </div>
 

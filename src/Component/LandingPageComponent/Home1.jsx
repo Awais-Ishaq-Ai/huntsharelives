@@ -3,9 +3,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination, Autoplay } from 'swiper/modules';
-import huntImg1 from '../assets/Images/HuntShareLive.png';
-import MobleImg2 from '../assets/Images/Mobile.png'
-import BoxImg3 from '../assets/Images/Box.png'
+import huntImg1 from '../../assets/Images/HuntShareLive.png';
+import MobleImg2 from '../../assets/Images/Mobile.png'
+import BoxImg3 from '../../assets/Images/Box.png'
 import { Button } from '@mui/material';
 
 export default function Home1() {
@@ -55,13 +55,13 @@ export default function Home1() {
                 pagination={{ dynamicBullets: true }}
                 modules={[Pagination, Autoplay]}
                 autoplay={{ delay: 3000, disableOnInteraction: false }}
-                loop={true} // Infinite loop
+                loop={homeSlider.length>1} // Infinite loop
                 className="mySwiper">
                 {homeSlider.map((slide) => (
                     <SwiperSlide key={slide.id} className="">
                         <div className="w-[100%] md:flex justify-between items-center px-8">
                             <div className="md:w-[50%]">
-                                <h1 className="lg:text-4xl md:text-2xl font-bold">{slide.title}</h1>
+                                <div className="lg:text-4xl md:text-2xl font-bold">{slide.title}</div>
                                 <p className="mt-2 md:text-[10px]">{slide.description}</p>
 
                                 {/* @ buttons */}

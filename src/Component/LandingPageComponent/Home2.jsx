@@ -1,7 +1,7 @@
 import React from 'react';
-import Mobile1 from '../assets/Images/Home2Mobile.png';
-import Mobile3 from '../assets/Images/Home2Mobile3.png';
-import Mobile2 from '../assets/Images/Home2Mobile2.png';
+import Mobile1 from '../../assets/Images/Home2Mobile.png';
+import Mobile3 from '../../assets/Images/Home2Mobile3.png';
+import Mobile2 from '../../assets/Images/Home2Mobile2.png';
 
 export default function Home2() {
     return (
@@ -35,9 +35,9 @@ export default function Home2() {
                     <img src={Mobile3} className='w-full max-w-[400px] object-contain' alt='Gaming Platform' />
                 </div>
                 <div className='md:w-1/2 flex flex-col items-center text-center md:text-left'>
-                    <h1 className='text-xl md:text-3xl font-bold'>
+                    <div className='text-xl md:text-3xl font-bold'>
                         Play, Stream, and Win with <span className='text-[#9850F8]'>Hunt Share Live</span> Games!
-                    </h1>
+                    </div>
                     <p className='mt-4 text-lg max-w-[550px]'>
                         Join Hunt Share Live today and be part of a platform that redefines live streaming with cutting-edge technology.
                     </p>
