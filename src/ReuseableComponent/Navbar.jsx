@@ -13,7 +13,11 @@ export default function Navbar() {
         <span onClick={() => setToggle(true)} className="md:hidden text-xl text-[#9850F8] cursor-pointer">
           <FaBars />
         </span>
-        <h1 className="text-3xl text-[#9850F8] font-bold font-[Poppins]">Logo</h1>
+        <h1 className="text-3xl text-[#9850F8] font-bold font-[Poppins]">
+          <Link to="/">
+            Logo
+          </Link>
+        </h1>
         <nav className="hidden md:flex items-center gap-10">
           <Link to="home" className="text-[#9850F8]">Home</Link>
           <Link to="about" className="text-[#9850F8]">About Us</Link>
@@ -35,16 +39,14 @@ export default function Navbar() {
       {/* Shade Overlay */}
       <div
         onClick={() => setToggle(false)}
-        className={`fixed top-0 left-0 w-full h-full bg-black/40 z-30 transition-opacity duration-300 ${
-          toggle ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-        }`}
+        className={`fixed top-0 left-0 w-full h-full bg-black/40 z-30 transition-opacity duration-300 ${toggle ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+          }`}
       />
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 left-0 h-full w-[60%] bg-[#9850F8] z-40 p-6 shadow-lg transform transition-transform duration-300 ease-in-out ${
-          toggle ? 'translate-x-0' : '-translate-x-full'
-        }`}
+        className={`fixed top-0 left-0 h-full w-[60%] bg-[#9850F8] z-40 p-6 shadow-lg transform transition-transform duration-300 ease-in-out ${toggle ? 'translate-x-0' : '-translate-x-full'
+          }`}
       >
         <div className="flex justify-between items-center mb-4">
           <h1 className="text-2xl font-bold text-white">Logo</h1>
