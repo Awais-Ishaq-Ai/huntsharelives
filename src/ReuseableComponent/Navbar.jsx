@@ -22,7 +22,7 @@ export default function Navbar() {
           <Link to="home" className="text-[#9850F8]">Home</Link>
           <Link to="about" className="text-[#9850F8]">About Us</Link>
           <Link to="services" className="text-[#9850F8]">Services</Link>
-          <Link to="blog" className="text-[#9850F8]">Blog</Link>
+          <Link to="contact" className="text-[#9850F8]">Contact</Link>
           <Button
             sx={{
               background: "linear-gradient(to left, #A65BFB, #8844F2)",
