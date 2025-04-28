@@ -1,27 +1,13 @@
 import React from 'react';
-// import img7 from "../assets/Images/chart7.png"
-// import img8 from "../assets/Images/chart8.png"
-// import img9 from "../assets/Images/chart9.png"
-// import icon1 from "../assets/Images/icon1.png"
-// import icon2 from "../assets/Images/icon2.png"
-// import icon4 from "../assets/Images/icon4.png"
-// import icon7 from "../assets/Images/icon7.png"
-// import icon5 from "../assets/Images/icon5.png"
-// import icon9 from "../assets/Images/icon9.png"
-// import icon6 from "../assets/Images/icon6.png"
-// import icon8 from "../assets/Images/icon8.png"
 
 import { BsCoin } from "react-icons/bs";
-import { MdOutlineSupportAgent } from "react-icons/md";
 import { GiBearFace } from "react-icons/gi";
 import { IoChatbubblesOutline } from "react-icons/io5";
 import { PiGameControllerDuotone } from "react-icons/pi";
 import { BsBattery } from "react-icons/bs";
 import { SlBadge } from "react-icons/sl";
 import { PiHandWithdrawLight } from "react-icons/pi";
-// import Abouthunt2 from '../assets/Images/Abouthunt2.png'
-import Abouthunt5 from '../assets/Images/Abouthunt5.png'
-import Abouthunt3 from '../assets/Images/Abouthunt3.png'
+import Abouthunt5 from '../assets/Images/AboutHunt5.png'
 import Abouthunt4 from '../assets/Images/Abouthunt4.png'
 import speaker from '../assets/Images/speaker.png'
 const Services = () => {
